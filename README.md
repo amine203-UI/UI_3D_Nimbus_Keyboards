@@ -1,103 +1,79 @@
 <div align="center">
+  <img src="/public/image-for-readme.png" alt="Project Banner" width="800">
 
- <h3 align="center">Iphone-Website</h3>
-  <br />
-    <img src="/public/image-for-readme.png" alt="3D_website" width="700">
-  <br />
+  <h1 align="center">Nimbus 3D Keyboards</h1>
+
+  <p align="center">
+    A premium, high-performance 3D landing page experience built with Next.js 15 and GSAP.
+  </p>
 
   <div>
-    <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
-    <img src="https://img.shields.io/badge/-Three_JS-black?style=for-the-badge&logoColor=white&logo=threedotjs&color=000000" alt="three.js" />
-    <img src="https://img.shields.io/badge/-GSAP-black?style=for-the-badge&logoColor=white&logo=greensock&color=88CE02" alt="greensock" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/-Next.js_15-black?style=for-the-badge&logo=nextdotjs&color=000000" alt="nextjs" />
+    <img src="https://img.shields.io/badge/-Three_JS-black?style=for-the-badge&logo=threedotjs&color=000000" alt="three.js" />
+    <img src="https://img.shields.io/badge/-GSAP-black?style=for-the-badge&logo=greensock&color=88CE02" alt="greensock" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logo=typescript&color=3178C6" alt="typescript" />
   </div>
 
-  ## <a name="introduction">🤖 Introduction</a>
+  <br />
+</div>
 
-A modern, responsive, and highly animated 3D website built using Next.js 15 and GSAP to deliver smooth, high-performance animations.
-This project showcases 3D motion effects, scroll-triggered animations, and an interactive UI inspired by premium product landing pages.
+---
+
+## 📖 Table of Contents
+* [Introduction](#introduction)
+* [Tech Stack](#tech-stack)
+* [Key Features](#features)
+* [Project Architecture](#architecture)
+* [Quick Start](#quick-start)
+
+---
+
+## <a name="introduction">🤖 Introduction</a>
+
+**Nimbus 3D** is a modern, responsive landing page designed to showcase premium hardware through immersive web technology. By leveraging **Next.js 15** and **GSAP**, the project achieves fluid, high-performance animations that were previously reserved for high-end cinematic web experiences. 
+
+This project goes beyond simple scrolling, featuring complex **parallax depth**, **scroll-triggered timelines**, and **physics-based easing** to create a tactile digital product showcase.
+
+---
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- Next.js
-- React.js
-- Three.js
-- GSAP (Greensock)
-- Vite
-- Tailwind CSS
+| Technology | Purpose |
+| :--- | :--- |
+| **Next.js 15** | React Framework with App Router & Server Components |
+| **Three.js** | Rendering high-quality 3D models and environments |
+| **GSAP** | Industry-standard animation engine for ScrollTrigger & Timelines |
+| **Tailwind CSS** | Utility-first styling for rapid, responsive UI development |
+| **TypeScript** | Ensuring type safety and scalable code architecture |
+| **Vite** | Lightning-fast build tool and development server |
+
+---
 
 ## <a name="features">🔋 Features</a>
 
-🔷 3D Interactive Animations
+### ✨ Immersive Visuals
+* **3D Interactive Models:** Real-time 3D transforms with optimized geometry.
+* **Physics-Based Easing:** Natural-feeling motion using GSAP's advanced easing functions.
+* **Parallax Storytelling:** Multi-layered background and foreground motion as you scroll.
 
-Smooth and optimized 3D transforms
+### 🚀 Performance Optimized
+* **Next.js 15 Power:** Fully utilizing the latest App Router for optimized routing and loading.
+* **GPU Acceleration:** Animations are offloaded to the GPU to ensure a steady 60 FPS.
+* **Asset Lazy-Loading:** 3D models and high-res images load only when needed.
 
-Hover + motion-based interactions
+### 🛠 Professional Engineering
+* **Responsive Design:** Seamless experience across Ultra-wide monitors, Laptops, and Mobile.
+* **Clean Codebase:** Modular component structure with strict TypeScript definitions.
 
-Physics-like animations using GSAP easing
+---
 
-🔷 GSAP ScrollTrigger
+## <a name="architecture">🏗 Project Architecture</a>
 
-Scroll-based section reveals
-
-Parallax motion
-
-Timeline-controlled animations
-
-🔷 Modern Next.js 15 Setup
-
-App Router
-
-Optimized image loading
-
-Server & Client components
-
-API routes support
-
-🔷 Responsive & High Performance
-
-Fully responsive for desktop, tablet, and mobile
-
-GPU-accelerated animations
-
-Code-splitting and lazy-loading
-
-🔷 TypeScript Support
-
-Strong typing
-
-Clean & scalable architecture
-
-Reusable components
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-
-
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/amine203-UI/UI_3D_Nimbus_Keyboards.git
-cd iphone-doc
-```
-
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Running the Project**
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
-
-👨‍💻 Author Amine Ould Medjeber Full-Stack Developer 
-[ouldmedjeberamine@gmail.com] 🌐 [www.linkedin.com/in/amine-medjeber]
+```text
+├── public/             # 3D Models and static assets
+├── src/
+│   ├── components/     # Reusable UI and 3D Canvas elements
+│   ├── animations/     # GSAP timeline definitions
+│   ├── hooks/          # Custom hooks for scroll/resize tracking
+│   └── app/            # Next.js 15 App Router pages
